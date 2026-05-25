@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darn Cafe Bar - คาเฟ่ บาร์ อาหาร</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ฟอนต์ Anuphan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="darnpnglogo.png" alt="Darn Cafe Bar Logo" class="logo-img">
+                <span class="logo-text"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#cafe" class="nav-link active">คาเฟ่</a></li>
+                <li><a href="#bar" class="nav-link">บาร์</a></li>
+                <li><a href="#food" class="nav-link">อาหาร</a></li>
+                <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--section class="hero">
+        <div class="hero-content">
+            <img src="darnpnglogo.png" alt="Darn Cafe Bar Logo" class="hero-logo">
+            <p class="hero-subtitle">คาเฟ่ • บาร์ • อาหาร</p>
+            <p class="hero-desc">พื้นที่เล็กๆ สำหรับทุกช่วงเวลา</p>
+        </div>
+    </?section-->
+
+    <!-- ========== CAFE SECTION ========== -->
+    <section id="cafe" class="section">
+        <div class="section-header">
+            <h2>Cafe / คาเฟ่</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Coffee -->
+        <div class="category">
+            <div class="category-header" data-category="coffee">
+                <h3 class="category-title">Coffee / กาแฟ</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="coffee-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">อเมริกาโน่</span>
+                            <span class="menu-name-en">Americano</span>
+                            <span class="menu-price">ร้อน 45 / เย็น 50</span>
+                            <span class="menu-price-en">Hot 45 / Iced 50</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9300.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">เอสเปรสโซ่</span>
+                            <span class="menu-name-en">Espresso</span>
+                            <span class="menu-price">ร้อน 50 / เย็น 55</span>
+                            <span class="menu-price-en">Hot 50 / Iced 55</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9284.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ลาเต้</span>
+                            <span class="menu-name-en">Latte</span>
+                            <span class="menu-price">ร้อน 50 / เย็น 55</span>
+                            <span class="menu-price-en">Hot 50 / Iced 55</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9298.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">คาปูชิโน่</span>
+                            <span class="menu-name-en">Cappuccino</span>
+                            <span class="menu-price">ร้อน 50 / เย็น 55</span>
+                            <span class="menu-price-en">Hot 50 / Iced 55</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9297.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">มอคค่า</span>
+                            <span class="menu-name-en">Mocha</span>
+                            <span class="menu-price">ร้อน 55 / เย็น 50</span>
+                            <span class="menu-price-en">Hot 55 / Iced 50</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9295.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">กาแฟมะพร้าว</span>
+                            <span class="menu-name-en">Coconut Coffee</span>
+                            <span class="menu-price">เย็น 60</span>
+                            <span class="menu-price-en">Iced 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9294.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">กาแฟส้ม</span>
+                            <span class="menu-name-en">Orange Coffee</span>
+                            <span class="menu-price">เย็น 60</span>
+                            <span class="menu-price-en">Iced 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9296.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">กาแฟองุ่น</span>
+                            <span class="menu-name-en">Grape Coffee</span>
+                            <span class="menu-price">เย็น 60</span>
+                            <span class="menu-price-en">Iced 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9301.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">คาราเมลมัคคิอาโต้</span>
+                            <span class="menu-name-en">Caramel Macchiato</span>
+                            <span class="menu-price">ร้อน 55 / เย็น 60</span>
+                            <span class="menu-price-en">Hot 55 / Iced 60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Non-Coffee -->
+        <div class="category">
+            <div class="category-header" data-category="noncoffee">
+                <h3 class="category-title">Non-Coffee / เครื่องดื่มทั่วไป</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="noncoffee-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/IMG_9333.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชาไทย</span>
+                            <span class="menu-name-en">Thai Tea</span>
+                            <span class="menu-price">ร้อน 45 / เย็น 50 / ปั่น 60</span>
+                            <span class="menu-price-en">Hot 45 / Iced 50 / Blended 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9287.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชาดำ</span>
+                            <span class="menu-name-en">Black Tea</span>
+                            <span class="menu-price">ร้อน 35 / เย็น 40</span>
+                            <span class="menu-price-en">Hot 35 / Iced 40</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9285.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชามะนาว</span>
+                            <span class="menu-name-en">Lemon Tea</span>
+                            <span class="menu-price">เย็น 45</span>
+                            <span class="menu-price-en">Iced 45</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9288.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชาพีช</span>
+                            <span class="menu-name-en">Peach Tea</span>
+                            <span class="menu-price">เย็น 45</span>
+                            <span class="menu-price-en">Iced 45</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9279.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">โกโก้</span>
+                            <span class="menu-name-en">Cocoa</span>
+                            <span class="menu-price">ร้อน 45 / เย็น 50 / ปั่น 60</span>
+                            <span class="menu-price-en">Hot 45 / Iced 50 / Blended 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9281.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">โกโก้มินต์</span>
+                            <span class="menu-name-en">Cocoa Mint</span>
+                            <span class="menu-price">เย็น 50 / ปั่น 60</span>
+                            <span class="menu-price-en">Iced 50 / Blended 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9301.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">คาราเมลนมสด</span>
+                            <span class="menu-name-en">Caramel Fresh Milk</span>
+                            <span class="menu-price">ร้อน 50 / เย็น 55 / ปั่น 65</span>
+                            <span class="menu-price-en">Hot 50 / Iced 55 / Blended 65</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matcha -->
+        <div class="category">
+            <div class="category-header" data-category="matcha">
+                <h3 class="category-title">Matcha / มัทฉะ</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="matcha-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/IMG_9290.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">เพียว มัทฉะ</span>
+                            <span class="menu-name-en">Pure Matcha</span>
+                            <span class="menu-price">ร้อน 40 / เย็น 45</span>
+                            <span class="menu-price-en">Hot 40 / Iced 45</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9289.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">มัทฉะ ลาเต้</span>
+                            <span class="menu-name-en">Matcha Latte</span>
+                            <span class="menu-price">ร้อน 50 / เย็น 50</span>
+                            <span class="menu-price-en">Hot 50 / Iced 50</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9293.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">มัทฉะ คาราเมลมัคคีอาโต้</span>
+                            <span class="menu-name-en">Matcha Caramel Macchiato</span>
+                            <span class="menu-price">ร้อน 55 / เย็น 60</span>
+                            <span class="menu-price-en">Hot 55 / Iced 60</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9292.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">มัทฉะ มะพร้าว</span>
+                            <span class="menu-name-en">Matcha Coconut</span>
+                            <span class="menu-price">เย็น 55</span>
+                            <span class="menu-price-en">Iced 55</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9291.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">มัทฉะ น้ำผึ้งมะนาว</span>
+                            <span class="menu-name-en">Matcha Honey Lemon</span>
+                            <span class="menu-price">เย็น 55</span>
+                            <span class="menu-price-en">Iced 55</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bakery -->
+        <div class="category">
+            <div class="category-header" data-category="bakery">
+                <h3 class="category-title">Bakery / เบเกอรี่</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="bakery-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/IMG_0824.jpeg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ครอฟเฟิล ดั้งเดิม</span>
+                            <span class="menu-name-en">Original Croffle</span>
+                            <span class="menu-price">39.-</span>
+                            <!--span class="menu-price-en">39.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9568.jpeg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ครอฟเฟิล นูเทลล่า อัลมอนด์</span>
+                            <span class="menu-name-en">Nutella Almond Croffle</span>
+                            <span class="menu-price">49.-</span>
+                            <!--span class="menu-price-en">49.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9567.jpeg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ครอฟเฟิล สตรอว์เบอร์รี่ ครีม</span>
+                            <span class="menu-name-en">Strawberry Cream Croffle</span>
+                            <span class="menu-price">49.-</span>
+                            <!--span class="menu-price-en">49.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9566.jpeg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ครอฟเฟิล บานอฟฟี่</span>
+                            <span class="menu-name-en">Banoffee Croffle</span>
+                            <span class="menu-price">49.-</span>
+                            <!--span class="menu-price-en">49.-</!--span-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BAR SECTION ========== -->
+    <section id="bar" class="section">
+        <div class="section-header">
+            <h2>Bar / บาร์</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Beer -->
+        <div class="category">
+            <div class="category-header" data-category="beer">
+                <h3 class="category-title">Beer / เบียร์</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="beer-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/chang001.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ช้าง</span>
+                            <span class="menu-name-en">Chang</span>
+                            <span class="menu-price">ขวด 80 / โปร 210</span>
+                            <!--span class="menu-price-en">Bottle 80 / Promo 210</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Logo-LEO-Beer.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ลีโอ</span>
+                            <span class="menu-name-en">Leo</span>
+                            <span class="menu-price">ขวด 80 / โปร 210</span>
+                            <!--span class="menu-price-en">Bottle 80 / Promo 210</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/images.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">สิงห์</span>
+                            <span class="menu-name-en">Singha</span>
+                            <span class="menu-price">ขวด 85 / โปร 225</span>
+                            <!--span class="menu-price-en">Bottle 85 / Promo 225</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/4e5b52c906c9a1da76b161c0ec91aca8.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ไฮเนเก้น</span>
+                            <span class="menu-name-en">Heineken</span>
+                            <span class="menu-price">ขวด 95 / โปร 250</span>
+                            <!--span class="menu-price-en">Bottle 95 / Promo 250</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/asahi.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">อาซาฮี</span>
+                            <span class="menu-name-en">Asahi</span>
+                            <span class="menu-price">ขวด 95 / โปร 260</span>
+                            <!--span class="menu-price-en">Bottle 95 / Promo 260</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Screenshot 2026-05-25 144349.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">บัดไวเซอร์</span>
+                            <span class="menu-name-en">Budweiser</span>
+                            <span class="menu-price">ขวด 100 / โปร 275</span>
+                            <!--span class="menu-price-en">Bottle 100 / Promo 275</!--span-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Whiskey -->
+        <div class="category">
+            <div class="category-header" data-category="whiskey">
+                <h3 class="category-title">Liquor / เหล้า</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="whiskey-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/th-11134207-81ztm-mjiql8bk9clc09.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">แสงโสม</span>
+                            <span class="menu-name-en">Saengsom</span>
+                            <span class="menu-price">แบน 239 / กลม 499</span>
+                            <!--span class="menu-price-en">Half 239 / Full 499</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/file.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">หงษ์ทอง</span>
+                            <span class="menu-name-en">Hongthong</span>
+                            <span class="menu-price">แบน 239 / กลม 499</span>
+                            <!--span class="menu-price-en">Half 239 / Full 499</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Regency_Brandy_VSOP_350ml.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">รีเจนซี่</span>
+                            <span class="menu-name-en">Regency</span>
+                            <span class="menu-price">แบน 419 / กลม 789</span>
+                            <!--span class="menu-price-en">Half 419 / Full 789</!--span-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soju -->
+        <!--div class="category">
+            <div class="category-header" data-category="soju">
+                <h3 class="category-title">Soju / โซจู</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="soju-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชามิซุล โซจู</span>
+                            <span class="menu-name-en">Chamisul Soju</span>
+                            <span class="menu-price">150.-</span>
+                            <span class="menu-price-en">150.-</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ชาร์ม โซจู</span>
+                            <span class="menu-name-en">Charm Soju</span>
+                            <span class="menu-price">150.-</span>
+                            <span class="menu-price-en">150.-</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">โซจู องุ่น</span>
+                            <span class="menu-name-en">Grape Soju</span>
+                            <span class="menu-price">160.-</span>
+                            <span class="menu-price-en">160.-</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">โซจู พีช</span>
+                            <span class="menu-name-en">Peach Soju</span>
+                            <span class="menu-price">160.-</span>
+                            <span class="menu-price-en">160.-</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/IMG_9299.PNG" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">โซจู โยเกิร์ต</span>
+                            <span class="menu-name-en">Yogurt Soju</span>
+                            <span class="menu-price">160.-</span>
+                            <span class="menu-price-en">160.-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </!--div>
+    </section-->
+
+    <!-- ========== FOOD SECTION ========== -->
+    <section id="food" class="section">
+        <div class="section-header">
+            <h2>Food / อาหาร</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Main Dishes -->
+        <div class="category">
+            <div class="category-header" data-category="main">
+                <h3 class="category-title">Food / อาหาร</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="main-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/tyk.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ต้มยำกุ้งน้ำข้น</span>
+                            <span class="menu-name-en">Tom Yum Kung</span>
+                            <span class="menu-price">149.-</span>
+                            <!--span class="menu-price-en">149.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Screenshot 2026-05-25 152515.png" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ต้มแซ่บกระดูกหมู</span>
+                            <span class="menu-name-en">Tom Saeb Pork Bone</span>
+                            <span class="menu-price">149.-</span>
+                            <!--span class="menu-price-en">149.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/3Kimchi-Soup.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ซุปกิมจิ</span>
+                            <span class="menu-name-en">Kimchi Soup</span>
+                            <span class="menu-price">139.-</span>
+                            <!--span class="menu-price-en">139.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/d0834336-da5f-46d6-98a8-bcece9486e0f.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ยำวุ้นเส้นหมูสับ</span>
+                            <span class="menu-name-en">Yum Woonsen Minced Pork</span>
+                            <span class="menu-price">109.-</span>
+                            <!--span class="menu-price-en">109.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Dtbezn3nNUxytg04ay0DcoH4oQluIX8bO9MEZvXouTfTsS.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ยำหมูยอ</span>
+                            <span class="menu-name-en">Yum Mu Yo</span>
+                            <span class="menu-price">109.-</span>
+                            <!--span class="menu-price-en">109.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/Chicken-wings-fried-fish-sauce.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ปีกไก่ทอด</span>
+                            <span class="menu-name-en">Fried Chicken Wings</span>
+                            <span class="menu-price">99.-</span>
+                            <!--span class="menu-price-en">99.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/dad.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">เนื้อทอด</span>
+                            <span class="menu-name-en">Fried Pork</span>
+                            <span class="menu-price">99.-</span>
+                            <!--span class="menu-price-en">99.-</!--span-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="category">
+            <div class="category-header" data-category="snack">
+                <h3 class="category-title">Appetizers / อาหารทานเล่น</h3>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="category-content" id="snack-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="/shutterstock_2322684659.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">เฟรนช์ฟรายส์</span>
+                            <span class="menu-name-en">French Fries</span>
+                            <span class="menu-price">79.-</span>
+                            <!--span class="menu-price-en">79.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/286aab6365e34f8495becea45186fbec.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ไก่ป๊อป</span>
+                            <span class="menu-name-en">Chicken Pop</span>
+                            <span class="menu-price">79.-</span>
+                            <!--span class="menu-price-en">79.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/okdvEQqBYvAcri1AAIJBwPbBZAbywrm73il57~tplv-sdweummd6v-text-logo-v1_QGhvbWVjb29rX2J5X3Bhc3N5_q75.jpeg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ปูอัดทอด</span>
+                            <span class="menu-name-en">Fried Crab Stick</span>
+                            <span class="menu-price">79.-</span>
+                            <!--span class="menu-price-en">79.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/4ba9c9bc7683468abfdabf76a3fb6a45.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ปูอัดวาซาบิ</span>
+                            <span class="menu-name-en">Wasabi Crab Stick</span>
+                            <span class="menu-price">79.-</span>
+                            <!--span class="menu-price-en">79.-</!--span-->
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="/23348rs.jpg" alt="">
+                        <div class="menu-info">
+                            <span class="menu-name">ถั่วแระ</span>
+                            <span class="menu-name-en">Edamame</span>
+                            <span class="menu-price">70.-</span>
+                            <!--span class="menu-price-en">70.-</!--span-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2>เกี่ยวกับเรา</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <p>DARN คือพื้นที่เล็กๆ ที่ผสมผสานระหว่างคาเฟ่ บาร์ และอาหาร ไว้ในที่เดียว</p>
+            <p>เปิดทุกวัน 10:00 - 00:00 น.</p>
+            <p>TikTok : darn.kkp</p>
+            <p>Instargram : darn.kkp</p>
+            <p>Facebook Page : Darn CafeBar</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 DARN CAFE BAR — All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

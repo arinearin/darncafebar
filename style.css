@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anuphan', 'Sarabun', sans-serif;
+    background: #000000;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+/* พื้นหลัง 3 สีในดำ */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 15% 20%, rgba(25, 25, 30, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 85% 70%, rgba(10, 15, 25, 0.6) 0%, transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(20, 20, 25, 0.4) 0%, transparent 60%),
+        #000000;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #000000;
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    filter: brightness(1.1);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffffff, #aaaaaa, #666666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #888888;
+    transition: 0.2s;
+    padding: 6px 0;
+    position: relative;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: #e0e0e0;
+    transition: 0.3s;
+}
+
+/* ========== HERO ========== */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.hero-content {
+    padding: 2rem;
+}
+
+.hero-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(1.1);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #777777;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.hero-desc {
+    margin-top: 1rem;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+/* ========== SECTION ========== */
+.section {
+    top: 100px;
+    max-width: 1280px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    letter-spacing: -0.5px;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #ffffff, #555555, transparent);
+    margin: 12px auto 0;
+}
+
+/* ========== CATEGORY ========== */
+.category {
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(16px);
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #ffffff;
+    transition: 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.category:hover {
+    background: rgba(15, 15, 15, 0.9);
+    border-left-color: #cccccc;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.category-header:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.category-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+.toggle-icon {
+    color: #888888;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.category-header:hover .toggle-icon {
+    color: #ffffff;
+}
+
+.category-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+    max-height: 0;
+    padding: 0 1.5rem;
+}
+
+.category-content.show {
+    max-height: 2000px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* ========== MENU GRID ========== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.25s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    background: rgba(30, 30, 30, 0.8);
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* รูปภาพ - สว่างอยู่แล้วโดยไม่ต้อง hover */
+.menu-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    filter: brightness(0.95) contrast(1.05);
+    transition: 0.2s;
+    margin-bottom: 1rem;
+}
+
+/* เวลา hover - ปรับแค่เล็กน้อยไม่เปลี่ยนความสว่างมาก */
+.menu-card:hover img {
+    filter: brightness(1) contrast(1.05);
+    transform: scale(1.01);
+}
+
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.menu-name {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.menu-price {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* ========== ABOUT ========== */
+.about-section {
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-content p {
+    margin: 0.7rem 0;
+    font-size: 0.95rem;
+    color: #888888;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #555555;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .logo-img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        flex-direction: column;
+        background: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero-logo {
+        width: 350px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    .section {
+        padding: 0 1rem;
+        margin: 3rem auto;
+        padding-top: 100px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+    }
+    
+    .category-header {
+        padding: 1rem;
+    }
+    
+    .category-content.show {
+        padding: 0 1rem 1rem 1rem;
+    }
+}
