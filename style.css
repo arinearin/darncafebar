@@ -252,7 +252,7 @@ body::before {
     padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-/* ========== MENU GRID ========== */
+/* ========== MENU GRID (Desktop) ========== */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -307,6 +307,11 @@ body::before {
     color: #cccccc;
 }
 
+.menu-name-en {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
 .menu-price {
     color: #ffffff;
     font-weight: 600;
@@ -314,6 +319,11 @@ body::before {
     background: rgba(255, 255, 255, 0.08);
     padding: 4px 12px;
     border-radius: 20px;
+}
+
+.menu-price-en {
+    font-size: 0.7rem;
+    color: #666666;
 }
 
 /* ========== ABOUT ========== */
@@ -361,7 +371,10 @@ footer {
     background: #666666;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ============================================================ */
+/* ========== RESPONSIVE - เปลี่ยนเป็นสไลด์แนวราบ ========== */
+/* ============================================================ */
+
 @media (max-width: 768px) {
     .nav-container {
         padding: 0.7rem 1rem;
@@ -398,15 +411,6 @@ footer {
         display: flex;
     }
 
-    .hero-logo {
-        width: 180px;
-    }
-
-    .hero-subtitle {
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-    }
-
     .section {
         padding: 0 1rem;
         margin: 3rem auto;
@@ -417,56 +421,89 @@ footer {
         font-size: 1.8rem;
     }
 
-    /* มือถือ - รูปใหญ่เต็มจอ */
+    /* ----- แปลงเป็นสไลด์แนวราบ ----- */
     .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 0.5rem 0.2rem 1rem 0.2rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #333 #111;
     }
-    
+
+    .menu-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .menu-grid::-webkit-scrollbar-track {
+        background: #111;
+        border-radius: 4px;
+    }
+
+    .menu-grid::-webkit-scrollbar-thumb {
+        background: #444;
+        border-radius: 4px;
+    }
+
     .menu-card {
+        flex: 0 0 190px;
+        scroll-snap-align: start;
         padding: 0;
         background: rgba(0, 0, 0, 0.4);
         border-radius: 20px;
         overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: 0.2s;
     }
-    
-    /* รูปใหญ่เต็มความกว้าง มองเห็นเต็มใบ */
+
+    .menu-card:active {
+        transform: scale(0.97);
+    }
+
     .menu-card img {
         width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
+        height: 190px;
         object-fit: cover;
         object-position: center;
         margin-bottom: 0;
         border-radius: 0;
         display: block;
     }
-    
-    /* ข้อมูลอยู่ด้านล่าง */
+
     .menu-info {
-        padding: 12px 15px;
+        padding: 12px 14px;
         align-items: flex-start;
-        gap: 0.3rem;
-        background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.5));
+        gap: 0.2rem;
+        background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+        min-height: 100px;
     }
-    
+
     .menu-name {
-        font-size: 1rem;
+        font-size: 0.95rem;
         font-weight: 600;
         color: #ffffff;
     }
-    
+
     .menu-name-en {
-        font-size: 0.75rem;
-        color: #aaaaaa;
+        font-size: 0.7rem;
+        color: #999999;
         margin-top: -2px;
     }
-    
+
     .menu-price {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         padding: 3px 10px;
-        background: rgba(255, 255, 255, 0.15);
-        margin-top: 5px;
+        background: rgba(255, 255, 255, 0.12);
+        margin-top: 4px;
+        border-radius: 16px;
+        color: #ffffff;
+    }
+
+    .menu-price-en {
+        display: none; /* ซ่อนราคาภาษาอังกฤษบนมือถือเพื่อความกระชับ */
     }
 
     .category-title {
@@ -478,10 +515,16 @@ footer {
     }
     
     .category-content.show {
-        padding: 0 1rem 1.5rem 1rem;
+        padding: 0 0.5rem 1.5rem 0.5rem;
+    }
+
+    /* ปรับสไลด์ให้มีพื้นที่หายใจ */
+    .category {
+        border-left-width: 2px;
     }
 }
 
+/* ========== TABLET ========== */
 @media (min-width: 769px) and (max-width: 1024px) {
     .menu-card img {
         width: 150px;
@@ -490,5 +533,12 @@ footer {
     
     .menu-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+/* ========== DESKTOP LARGE ========== */
+@media (min-width: 1280px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 }
