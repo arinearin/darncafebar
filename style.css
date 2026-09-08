@@ -195,17 +195,17 @@ body::before {
 
 /* ========== CATEGORY ========== */
 .category {
-    background: rgba(10, 10, 10, 0.85);
+    background: rgba(10, 10, 10, 0.4);
     backdrop-filter: blur(16px);
     margin-bottom: 1.5rem;
-    border-left: 3px solid #ffffff;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
     transition: 0.2s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .category:hover {
-    background: rgba(15, 15, 15, 0.9);
-    border-left-color: #cccccc;
+    background: rgba(15, 15, 15, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.5);
 }
 
 .category-header {
@@ -265,14 +265,15 @@ body::before {
     align-items: center;
     text-align: center;
     padding: 1.2rem;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     transition: all 0.25s ease;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     cursor: pointer;
+    backdrop-filter: blur(4px);
 }
 
 .menu-card:hover {
-    background: rgba(30, 30, 30, 0.8);
+    background: rgba(30, 30, 30, 0.5);
     transform: translateY(-4px);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -328,7 +329,7 @@ body::before {
 
 /* ========== ABOUT ========== */
 .about-section {
-    background: rgba(5, 5, 5, 0.8);
+    background: rgba(5, 5, 5, 0.4);
     backdrop-filter: blur(12px);
     padding: 2rem;
     margin-bottom: 3rem;
@@ -452,11 +453,12 @@ footer {
         flex: 0 0 190px;
         scroll-snap-align: start;
         padding: 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0.06);
         transition: 0.2s;
+        backdrop-filter: blur(4px);
     }
 
     .menu-card:active {
@@ -477,7 +479,7 @@ footer {
         padding: 12px 14px;
         align-items: flex-start;
         gap: 0.2rem;
-        background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+        background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.25));
         min-height: 100px;
     }
 
@@ -503,7 +505,7 @@ footer {
     }
 
     .menu-price-en {
-        display: none; /* ซ่อนราคาภาษาอังกฤษบนมือถือเพื่อความกระชับ */
+        display: none;
     }
 
     .category-title {
@@ -518,7 +520,6 @@ footer {
         padding: 0 0.5rem 1.5rem 0.5rem;
     }
 
-    /* ปรับสไลด์ให้มีพื้นที่หายใจ */
     .category {
         border-left-width: 2px;
     }
