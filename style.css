@@ -193,14 +193,14 @@ background: linear-gradient(135deg, #1313ee 0%, #17055a 50%, #d30505 100%);
     margin-bottom: 1.5rem;
     border-left: 3px solid #ffffff;
     transition: 0.2s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, -0.5);
 
     background: rgba(10, 10, 10, 0.45);
 backdrop-filter: blur(8px);
 }
 
 .category:hover {
-    background: rgba(15, 15, 15, 0.9);
+    background: rgba(15, 15, 15, -0.5);
     border-left-color: #cccccc;
 }
 
@@ -215,7 +215,7 @@ backdrop-filter: blur(8px);
 }
 
 .category-header:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .category-title {
